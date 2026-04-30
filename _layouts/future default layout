@@ -1,0 +1,15 @@
+---
+layout: default
+title: Home | National Orthodox Schools United
+---
+
+<section class="relative bg-white py-24 md:py-32 px-8 text-center overflow-hidden">
+    <div class="max-w-4xl mx-auto relative z-10">
+        <h1 class="text-4xl md:text-6xl font-serif font-bold text-[#0A192F] mb-4 uppercase tracking-tight">
+            NATIONAL ORTHODOX SCHOOLS UNITED
+        </h1>
+        <h2 class="text-xl md:text-3xl font-serif italic text-[#D4AF37] mb-8">
+            Advancing Orthodox Christian K-12 and University Education
+        </h2>
+        </div>
+</section>
