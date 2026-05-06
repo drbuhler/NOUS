@@ -1,0 +1,12 @@
+<header class="bg-[#0A192F] text-white py-6 px-8 flex justify-between items-center shadow-md">
+    <a href="{{ '/' | relative_url }}" class="text-2xl font-serif font-bold tracking-wider hover:opacity-80 transition">NOUS</a>
+    <nav class="space-x-6 text-sm font-medium tracking-wide flex items-center">
+        {% for item in site.navigation %}
+            <a href="{{ item.url | relative_url }}" class="hover:text-[#D4AF37] transition">{{ item.title }}</a>
+        {% endfor %}
+        
+        <a href="{{ '/#conference' | relative_url }}" class="border border-[#D4AF37] text-[#D4AF37] px-4 py-2 rounded hover:bg-[#D4AF37] hover:text-[#0A192F] transition ml-4">
+            2026 Conference
+        </a>
+    </nav>
+</header>
