@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="py-20 px-8">
+    <div class="max-w-3xl mx-auto bg-white p-10 md:p-16 border border-gray-200 shadow-sm">
+        <header class="mb-10 border-b border-gray-200 pb-8">
+            <p class="text-sm font-bold tracking-[0.2em] text-[#D4AF37] uppercase mb-3">{{ page.date | date: "%B %-d, %Y" }}{% if page.author %} &middot; {{ page.author }}{% endif %}</p>
+            <h1 class="text-3xl md:text-4xl font-serif font-bold text-[#0A192F] leading-tight">{{ page.title }}</h1>
+            {% if page.subtitle %}<p class="text-xl text-gray-500 italic mt-3 font-serif">{{ page.subtitle }}</p>{% endif %}
+        </header>
+        <div class="prose-nous text-lg">
+            {{ content }}
+        </div>
+        <div class="mt-12 pt-8 border-t border-gray-200">
+            <a href="/blog/" class="text-sm font-bold text-[#0A192F] hover:text-[#D4AF37] transition">&larr; Back to all posts</a>
+        </div>
+    </div>
+</article>

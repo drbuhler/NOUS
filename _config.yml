@@ -1,0 +1,14 @@
+title: NOUS | National Orthodox United Schools
+description: Advancing Orthodox Christian Education — networking, resources, and support for Orthodox schools, co-ops, and homeschool families.
+url: "https://orthodoxschool.org"
+baseurl: ""
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:title/
+
+contact_email: dionysiusbuhler@gmail.com
+
+exclude:
+  - README.md
+  - "assets/FUTURE config yaml.md"
+  - "assets/# FUTURE  CNAME"

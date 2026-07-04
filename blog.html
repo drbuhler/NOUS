@@ -1,0 +1,30 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+description: News, essays, and updates from the NOUS network.
+---
+<section class="py-20 px-8">
+    <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-sm font-bold tracking-[0.3em] text-[#D4AF37] uppercase mb-4">From the Network</h2>
+            <h1 class="text-4xl font-serif font-bold text-[#0A192F] mb-6">NOUS Blog</h1>
+            <p class="text-gray-600 text-lg max-w-2xl mx-auto italic">News, essays, and updates for Orthodox Christian educators.</p>
+        </div>
+
+        {% if site.posts.size == 0 %}
+        <p class="text-center text-gray-500 italic">First post coming soon.</p>
+        {% endif %}
+
+        <div class="space-y-10">
+            {% for post in site.posts %}
+            <a href="{{ post.url }}" class="block bg-white p-8 md:p-10 border border-gray-200 shadow-sm hover:shadow-md transition group">
+                <p class="text-xs font-bold tracking-[0.2em] text-[#D4AF37] uppercase mb-2">{{ post.date | date: "%B %-d, %Y" }}</p>
+                <h2 class="text-2xl font-serif font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition mb-3">{{ post.title }}</h2>
+                <p class="text-gray-600 leading-relaxed">{{ post.excerpt | strip_html | truncate: 220 }}</p>
+                <p class="mt-4 text-sm font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition">Read more &rarr;</p>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
