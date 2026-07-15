@@ -1,3 +1,6 @@
+---
+# Front matter enables Jekyll/Liquid processing (used by the Latest section below)
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,7 +70,7 @@
             <a href="#scale" class="nav-link hover:text-[#D4AF37] transition">Models</a>
             <a href="#schools" class="nav-link hover:text-[#D4AF37] transition">Affiliates</a>
             <a href="#advisory" class="nav-link hover:text-[#D4AF37] transition">Advisors</a>
-            <a href="/blog/" class="nav-link hover:text-[#D4AF37] transition">Blog</a>
+            <a href="/blog/" class="nav-link hover:text-[#D4AF37] transition">News</a>
             <a href="/conference/" class="border border-[#D4AF37] text-[#D4AF37] px-5 py-2 rounded-sm hover:bg-[#D4AF37] hover:text-[#0A192F] transition duration-300 font-bold uppercase text-xs tracking-tighter">
                2026 Conference
             </a>
@@ -427,6 +430,18 @@
                             <a href="https://www.saintgregoryacademy.org/" target="_blank" class="block group">
                                 <span class="font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition text-lg block">St. Gregory Classical Academy</span>
                                 <span class="text-sm text-gray-500">Akron, OH <span class="text-[#D4AF37] px-2">✦</span> <em class="text-gray-400">Classical</em></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="break-inside-avoid">
+                    <h4 class="text-2xl font-serif font-bold text-[#0A192F] mb-6 border-b-2 border-[#D4AF37]/30 pb-2 inline-block">Illinois</h4>
+                    <ul class="space-y-6">
+                        <li>
+                            <a href="https://www.gaods.org/" target="_blank" class="block group">
+                                <span class="font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition text-lg block">Guardian Angel Orthodox Day School</span>
+                                <span class="text-sm text-gray-500">Des Plaines, IL (Chicago) <span class="text-[#D4AF37] px-2">✦</span> <em class="text-gray-400">Parochial</em></span>
                             </a>
                         </li>
                     </ul>
@@ -802,6 +817,28 @@
             <a href="/about/" class="inline-block border-2 border-[#0A192F] text-[#0A192F] px-8 py-3 rounded-sm font-bold hover:bg-[#0A192F] hover:text-white transition">About NOUS</a>
         </div>
     </section>
+
+    <!-- Latest from the News -->
+    {% if site.posts.size > 0 %}
+    {% assign latest = site.posts.first %}
+    <section id="latest" class="py-20 px-8 bg-[#FAFAFA] border-b border-gray-200">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-sm font-bold tracking-[0.3em] text-[#D4AF37] uppercase mb-4">Latest</h2>
+                <h3 class="text-3xl md:text-4xl font-serif font-bold text-[#0A192F]">From the NOUS Network</h3>
+            </div>
+            <a href="{{ latest.url }}" class="block bg-white p-8 md:p-10 border border-gray-200 shadow-sm hover:shadow-md transition group">
+                <p class="text-xs font-bold tracking-[0.2em] text-[#D4AF37] uppercase mb-2">{{ latest.date | date: "%B %-d, %Y" }}</p>
+                <h4 class="text-2xl font-serif font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition mb-3">{{ latest.title }}</h4>
+                <p class="text-gray-600 leading-relaxed">{{ latest.excerpt | strip_html | truncate: 220 }}</p>
+                <p class="mt-4 text-sm font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition">Read more &rarr;</p>
+            </a>
+            <div class="text-center mt-8">
+                <a href="/blog/" class="inline-block border-2 border-[#0A192F] text-[#0A192F] px-8 py-3 rounded-sm font-bold hover:bg-[#0A192F] hover:text-white transition">All News</a>
+            </div>
+        </div>
+    </section>
+    {% endif %}
 
     <!-- Professional Footer -->
     <footer class="bg-[#0A192F] text-white pt-16 pb-8 px-8 border-t border-[#D4AF37]/20">
