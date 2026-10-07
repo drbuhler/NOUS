@@ -18,4 +18,4 @@ Classical schools thrive when parents understand what their children are being g
 
 **Wisdom and Eloquence for Parents**, by Robert Littlejohn, Charles T. Evans, and Keith A. McCurdy. This one explains the deeper purpose of classical Christian education, which is forming wise, eloquent, faithful young men and women.
 
-Bulk pricing is available for schools. For a quote, contact Jessica Flanagan, Curriculum Consultant at Classical Academic Press, at [jflanagan@classicalsubjects.com](mailto:jflanagan@classicalsubjects.com).
+Bulk pricing is available for schools. For a quote, contact Jessica Flanagan, Curriculum Consultant at Classical Academic Press, at [jflanagan@classicalsubjects.com](mailto:jflanagan@classicalsubjects.com), and mention you found these books on the NOUS blog.
