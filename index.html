@@ -14,6 +14,7 @@ description: NOUS helps Orthodox Christians start and sustain schools, from home
     <link rel="icon" href="/assets/favicon-32x32.png" type="image/png" sizes="32x32">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     {% seo title=false %}
+    {% if site.goatcounter and jekyll.environment == "production" %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>{% endif %}
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -78,14 +79,14 @@ description: NOUS helps Orthodox Christians start and sustain schools, from home
             <a href="#schools" class="nav-link hover:text-[#D4AF37] transition">Affiliates</a>
             <a href="#advisory" class="nav-link hover:text-[#D4AF37] transition">Advisors</a>
             <a href="/blog/" class="nav-link hover:text-[#D4AF37] transition">News</a>
-            <a href="/conference/" class="border border-[#D4AF37] text-[#D4AF37] px-5 py-2 rounded-sm hover:bg-[#D4AF37] hover:text-[#0A192F] transition duration-300 font-bold uppercase text-xs tracking-tighter">
-               2026 Conference
+            <a href="/conference/" class="nav-link hover:text-[#D4AF37] transition">2026 Conference</a>
+            <a href="mailto:{{ site.contact_email }}?subject=Work%20with%20NOUS" class="border border-[#D4AF37] text-[#D4AF37] px-5 py-2 rounded-sm hover:bg-[#D4AF37] hover:text-[#0A192F] transition duration-300 font-bold uppercase text-xs tracking-tighter">
+               Work with me
             </a>
         </nav>
-        <div class="md:hidden text-[#D4AF37]">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m7 6H4" />
-            </svg>
+        <div class="md:hidden flex items-center gap-4">
+            <a href="/conference/" class="text-xs font-bold uppercase text-white hover:text-[#D4AF37] transition">Conference</a>
+            <a href="mailto:{{ site.contact_email }}?subject=Work%20with%20NOUS" class="border border-[#D4AF37] text-[#D4AF37] px-3 py-2 rounded-sm text-xs font-bold uppercase">Work with me</a>
         </div>
     </header>
 

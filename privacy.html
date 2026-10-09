@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy
-description: How orthodoxschool.org handles cookies, log files, affiliate links, site statistics, and email inquiries.
+description: How orthodoxschool.org handles visitor information - cookieless GoatCounter statistics, server logs, third-party embeds, and email inquiries.
 permalink: /privacy.html
 ---
 <!DOCTYPE html>
@@ -14,6 +14,7 @@ permalink: /privacy.html
     <link rel="icon" href="/assets/favicon-32x32.png" type="image/png" sizes="32x32">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     {% seo title=false %}
+    {% if site.goatcounter and jekyll.environment == "production" %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>{% endif %}
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -38,7 +39,7 @@ permalink: /privacy.html
             
             <div class="mb-12 border-b border-gray-200 pb-8">
                 <h1 class="text-3xl md:text-4xl font-serif font-bold text-[#0A192F] mb-4">Privacy Policy</h1>
-                <p class="text-sm text-gray-500 uppercase tracking-widest">Last Updated: May 2026</p>
+                <p class="text-sm text-gray-500 uppercase tracking-widest">Last Updated: October 2026</p>
             </div>
 
             <div class="space-y-8 text-gray-700 leading-relaxed">
@@ -51,32 +52,26 @@ permalink: /privacy.html
                 </section>
 
                 <section>
-                    <h2 class="text-xl font-bold text-[#0A192F] mb-3">Cookies and Log Files</h2>
+                    <h2 class="text-xl font-bold text-[#0A192F] mb-3">Cookies and Site Statistics</h2>
+                    <p class="mb-4">
+                        orthodoxschool.org does not set any cookies of its own: no advertising, tracking, or analytics cookies. We count page views with <a href="https://www.goatcounter.com/" class="underline">GoatCounter</a>, a privacy-friendly, cookieless analytics service. It records anonymous totals such as which pages are viewed, the referring site, and browser and screen size; it does not use cookies, does not collect personal information, and does not track you across other websites. We do not use Google Analytics.
+                    </p>
                     <p>
-                        Like nearly all websites, this site may store cookies on your computer. These collect information, but we have no direct access or control over them. To disable cookies, use your browser’s settings. We also use log files to help learn about when, from where, and how often traffic flows to this site (such as IP address, type of browser, number of clicks, etc.). None of this type of information is linked to anything that is personally identifiable.
+                        Our host, GitHub Pages, may keep standard server logs (such as IP address and browser type) for security and reliability.
                     </p>
                 </section>
 
                 <section>
-                    <h2 class="text-xl font-bold text-[#0A192F] mb-3">Affiliate Links & Amazon</h2>
-                    <p class="mb-4">
-                        The NOUS network may occasionally participate in affiliate programs, such as the Amazon Services LLC Associates Program. This means we may earn a very small commission on products (like educational books) you buy after entering through any of our pages. 
-                    </p>
-                    <p class="mb-4">
-                        These commissions never cost you any extra money, and we will never recommend a product just to make a sale. We only link to resources that we honestly respect and commend to your interest. These small commissions help support the network and allow us to continue providing resources to Orthodox educators.
-                    </p>
+                    <h2 class="text-xl font-bold text-[#0A192F] mb-3">Embedded Content and Third-Party Sites</h2>
                     <p>
-                        Amazon uses cookies to help make sure we receive a commission when you buy a product after clicking on a link. You can read Amazon’s Privacy Policy for more details.
+                        Some pages embed YouTube videos or link to outside services, such as conference registration through Living Classical and surveys on Google Forms. Those services have their own privacy policies and may set their own cookies when you use them.
                     </p>
                 </section>
 
                 <section>
-                    <h2 class="text-xl font-bold text-[#0A192F] mb-3">Google Analytics & Site Stats</h2>
-                    <p class="mb-4">
-                        Google Analytics is a web analytics tool we use to help understand how visitors engage with this website. It reports website trends using cookies and web beacons without identifying individual visitors. You can read the Google Analytics Privacy Policy, or use Google’s Chrome app to opt out of analytic data collection.
-                    </p>
+                    <h2 class="text-xl font-bold text-[#0A192F] mb-3">Affiliate Links</h2>
                     <p>
-                        To measure performance, Google uses small strings of text (known as cookies) that are placed on your computer when you click on ads. Cookies typically remain active on your computer for about 30 days. You can read more about Google Site Stats on their platform.
+                        orthodoxschool.org does not currently participate in any affiliate programs, including Amazon Associates, and does not use affiliate cookies. If that changes, we will update this page.
                     </p>
                 </section>
 

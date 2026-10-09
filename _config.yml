@@ -29,3 +29,6 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+
+# Cookieless analytics (GoatCounter)
+goatcounter: orthodoxschool
