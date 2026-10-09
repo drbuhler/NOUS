@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Welcome to the NOUS Blog
+description: The NOUS blog is the news desk of National Orthodox United Schools — network updates, essays on Orthodox classical education, and practical help for schools and families.
 author: Reader Dionysius (Keith) Buhler
 ---
 

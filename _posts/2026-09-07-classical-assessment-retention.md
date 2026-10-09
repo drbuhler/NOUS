@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Classical Assessment & Retention
+description: A St. Andrew Academy staff training by Reader Dionysius Buhler on classical assessment and retention as a matter of formation, not merely measurement.
 subtitle: Staff training at St. Andrew Academy
 author: Reader Dionysius (Keith) Buhler
 ---

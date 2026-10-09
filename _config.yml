@@ -12,3 +12,20 @@ exclude:
   - README.md
   - "assets/FUTURE config yaml.md"
   - "assets/# FUTURE  CNAME"
+
+# SEO / social (jekyll-seo-tag + jekyll-sitemap are both supported by GitHub Pages)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+lang: en_US
+tagline: Advancing Orthodox Christian Education
+logo: /assets/icon-512.png
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/og-image.jpg
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false
