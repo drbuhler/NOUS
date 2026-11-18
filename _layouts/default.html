@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} | NOUS{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/assets/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    {% seo title=false %}
+    {% if site.goatcounter and jekyll.environment == "production" %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>{% endif %}
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -45,12 +50,12 @@
         <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide items-center">
             <a href="/about/" class="nav-link hover:text-[#D4AF37] transition">About</a>
             <a href="/blog/" class="nav-link hover:text-[#D4AF37] transition">News</a>
-            <a href="/conference/" class="border border-[#D4AF37] text-[#D4AF37] px-5 py-2 rounded-sm hover:bg-[#D4AF37] hover:text-[#0A192F] transition duration-300 font-bold uppercase text-xs tracking-tighter">
-               2026 Conference
+            <a href="mailto:{{ site.contact_email }}?subject=Work%20with%20NOUS" class="border border-[#D4AF37] text-[#D4AF37] px-5 py-2 rounded-sm hover:bg-[#D4AF37] hover:text-[#0A192F] transition duration-300 font-bold uppercase text-xs tracking-tighter">
+               Work with me
             </a>
         </nav>
-        <div class="md:hidden">
-            <a href="/conference/" class="border border-[#D4AF37] text-[#D4AF37] px-3 py-2 rounded-sm text-xs font-bold uppercase">Conference</a>
+        <div class="md:hidden flex items-center gap-4">
+            <a href="mailto:{{ site.contact_email }}?subject=Work%20with%20NOUS" class="border border-[#D4AF37] text-[#D4AF37] px-3 py-2 rounded-sm text-xs font-bold uppercase">Work with me</a>
         </div>
     </header>
 
@@ -74,6 +79,7 @@
                     <li><a href="/about/" class="hover:text-white transition">About NOUS</a></li>
                     <li><a href="/#vision" class="hover:text-white transition">The 2035 Mandate</a></li>
                     <li><a href="/#schools" class="hover:text-white transition">School Directory</a></li>
+                    <li><a href="https://buhler.notion.site/School-in-a-Box-f4868e0ee5b542c9b41b45ae803cea33" target="_blank" rel="noopener" class="hover:text-white transition">Founder&rsquo;s Kit</a></li>
                     <li><a href="/testimonials/" class="hover:text-white transition">Testimonials</a></li>
                     <li><a href="/blog/" class="hover:text-white transition">Blog</a></li>
                 </ul>
@@ -93,6 +99,15 @@
                 <div class="mt-8 pt-6 border-t border-gray-800">
                     <p class="text-xs font-serif italic text-gray-500">St. Nektarios, pray for us!</p>
                 </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mb-10 border-l-4 border-[#D4AF37] pl-5 py-1">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div>
+                    <h3 class="font-serif text-lg text-white">Help shape Orthodox classical education</h3>
+                    <p class="text-sm text-gray-400 mt-1">Tell us about your school or family in a 3-minute survey.</p>
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfF7QNa5DoB_8oobLolJ0jOD6mRYmQVPMatoyBeiJkCTRy1hw/viewform" target="_blank" rel="noopener" class="inline-block self-start sm:self-auto shrink-0 bg-[#D4AF37] text-[#0A192F] px-5 py-2.5 text-xs font-bold uppercase tracking-widest hover:bg-white transition">Take the survey</a>
             </div>
         </div>
         <div class="max-w-6xl mx-auto pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">

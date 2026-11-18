@@ -1,5 +1,7 @@
 ---
 # Front matter enables Jekyll/Liquid processing (used by the Latest section below)
+title: NOUS | National Orthodox United Schools
+description: NOUS helps Orthodox Christians start and sustain schools, from homeschool co-ops to parish academies. Join the network.
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -7,6 +9,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOUS | National Orthodox United Schools</title>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/assets/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    {% seo title=false %}
+    {% if site.goatcounter and jekyll.environment == "production" %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>{% endif %}
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -71,14 +79,12 @@
             <a href="#schools" class="nav-link hover:text-[#D4AF37] transition">Affiliates</a>
             <a href="#advisory" class="nav-link hover:text-[#D4AF37] transition">Advisors</a>
             <a href="/blog/" class="nav-link hover:text-[#D4AF37] transition">News</a>
-            <a href="/conference/" class="border border-[#D4AF37] text-[#D4AF37] px-5 py-2 rounded-sm hover:bg-[#D4AF37] hover:text-[#0A192F] transition duration-300 font-bold uppercase text-xs tracking-tighter">
-               2026 Conference
+            <a href="mailto:{{ site.contact_email }}?subject=Work%20with%20NOUS" class="border border-[#D4AF37] text-[#D4AF37] px-5 py-2 rounded-sm hover:bg-[#D4AF37] hover:text-[#0A192F] transition duration-300 font-bold uppercase text-xs tracking-tighter">
+               Work with me
             </a>
         </nav>
-        <div class="md:hidden text-[#D4AF37]">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m7 6H4" />
-            </svg>
+        <div class="md:hidden flex items-center gap-4">
+            <a href="mailto:{{ site.contact_email }}?subject=Work%20with%20NOUS" class="border border-[#D4AF37] text-[#D4AF37] px-3 py-2 rounded-sm text-xs font-bold uppercase">Work with me</a>
         </div>
     </header>
 
@@ -88,7 +94,7 @@
 
 <section class="bg-white p-0">
         <div class="grid grid-cols-1 gap-0">
-            <img src="/assets/saint-banner.png" alt="Banner of Orthodox saints">
+            <img src="/assets/saint-banner.png" alt="Row of icons and paintings of saints, including St. Catherine, St. Gregory Palamas, St. Emmelia and St. Augustine">
         </div>
     </section>
 
@@ -112,7 +118,7 @@
             </p>
             <br><br>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="mailto:dionysiusbuhler@gmail.com?subject=Inquiry: Joining the NOUS Network" class="bg-[#0A192F] text-white px-10 py-4 rounded-sm text-lg font-medium hover:bg-slate-800 shadow-lg hover:shadow-xl transition-all text-center">
+                <a href="/membership/" class="bg-[#0A192F] text-white px-10 py-4 rounded-sm text-lg font-medium hover:bg-slate-800 shadow-lg hover:shadow-xl transition-all text-center">
                     Join NOUS for free (beta)
                 </a>
                 <a href="#advisory" class="text-[#0A192F] border-2 border-[#0A192F] px-10 py-4 rounded-sm text-lg font-medium hover:bg-gray-50 transition-all text-center">
@@ -124,27 +130,13 @@
 
 
 
-    <!-- Conference Banner (full details at /conference/) -->
-    <section id="conference" class="bg-[#0A192F] py-16 px-8 text-center border-t border-[#D4AF37]/30">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-sm font-bold tracking-[0.3em] text-[#D4AF37] uppercase mb-4">Save the Date</h2>
-            <h3 class="text-3xl md:text-4xl font-serif font-bold text-white mb-4">The St. Nektarios Orthodox Educators Conference</h3>
-            <p class="text-gray-300 text-lg mb-8">Online only &middot; November 6&ndash;7, 2026 &middot; RSVP by October 1</p>
-            <a href="/conference/" class="inline-block bg-[#D4AF37] text-[#0A192F] px-10 py-4 rounded-sm text-sm font-bold tracking-widest uppercase hover:bg-white transition duration-300 shadow-md">
-                Details &amp; Registration
-            </a>
-        </div>
-    </section>
-
-    <!-- End conference -->
-
 <!-- Book highlight --> 
 
 <section id="book" class="py-20 px-8 bg-white border-b border-gray-200">
         <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div class="flex justify-center md:justify-end">
                 <a href="https://svspress.com/into-the-light-classical-education-and-orthodox-christianity/?srsltid=AfmBOooafBbVXkE0s7z13yZ0g72p_lkISZ-ZBGok0pfxkES-xRKJEPqO" target="_blank" class="block transform hover:scale-105 transition duration-300">
-                    <img src="https://cdn11.bigcommerce.com/s-f4f99/images/stencil/original/products/11065/8889/Into_the_light_front_cover__86399.1759770858.png?c=2" alt="Into the Light Book Cover" class="w-64 md:w-80 shadow-2xl rounded-sm">
+                    <img src="https://cdn11.bigcommerce.com/s-f4f99/images/stencil/original/products/11065/8889/Into_the_light_front_cover__86399.1759770858.png?c=2" alt="Cover of the book Into the Light: Classical Education and Orthodox Christianity" class="w-64 md:w-80 shadow-2xl rounded-sm">
                 </a>
             </div>
             <div>
@@ -186,7 +178,7 @@
 
                         <br>  
 
-                        <strong>NOUS</strong> aims provides solutions to schools of any size, in each stage. 
+                        <strong>NOUS</strong> aims to provide solutions to schools of any size, in each stage. 
 
                         <br> <br> 
 
@@ -215,7 +207,7 @@
                     </div>
                     <div>
                         <h5 class="font-bold text-gray-800 text-lg">Consulting & Community</h5>
-                        <p class="text-sm text-gray-600">NOUS offers direct connection to peers, school leaders, and experts so as synergistically to build stable schools.</p>
+                        <p class="text-sm text-gray-600">NOUS connects you directly with peers, school leaders, and experts, so we can build stable schools together.</p>
                     </div>
                 </div>
 
@@ -227,7 +219,7 @@
                     </div>
                     <div>
                         <h5 class="font-bold text-gray-800 text-lg">Curriculum Direction (beta)</h5>
-                        <p class="text-sm text-gray-600"> We provide recommendations a set of vigorous, Great Books-aligned frameworks spanning multiple grades. The goal of Orthodox education is to follow the footsteps of St. John Chrysostom, St. Basil, St. Maximos, and more who were masters of the liberal arts and had purified hearts. </p>
+                        <p class="text-sm text-gray-600"> We recommend rigorous, Great Books-aligned frameworks that span multiple grades. The goal of Orthodox education is to follow the footsteps of St. John Chrysostom, St. Basil, St. Maximos, and more who were masters of the liberal arts and had purified hearts. </p>
                     </div>
                 </div>
 
@@ -240,6 +232,23 @@
                     <div>
                         <h5 class="font-bold text-gray-800 text-lg">Grants & Endowments (beta)</h5>
                         <p class="text-sm text-gray-600">We are working to generate grants from our NOUS Donor network. Grants are intended to create opportunity for launching schools or stabilizing existing schools going through generational transition. We also offer consulting to help newer schools with tuition planning, capital strategy, and fundraising campaigns.</p>
+                        <p class="text-sm text-gray-600 mt-2"><a href="https://www.orthodoxednetwork.org/" target="_blank" class="hover:text-[#D4AF37] transition underline decoration-[#D4AF37]/40 underline-offset-2">Scholarships through OCEN — Orthodox Christian Education Network</a></p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="bg-[#0A192F] text-[#D4AF37] p-2 rounded-sm shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 010 5.656l-3 3a4 4 0 01-5.656-5.656l1.5-1.5m8.328-1.672a4 4 0 000-5.656 4 4 0 00-5.656 0l-3 3a4 4 0 000 5.656" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-gray-800 text-lg">Links to Resources</h5>
+                        <ul class="text-sm text-gray-600 space-y-1 mt-1">
+                            <li><a href="https://buhler.notion.site/School-in-a-Box-f4868e0ee5b542c9b41b45ae803cea33" target="_blank" rel="noopener" class="hover:text-[#D4AF37] transition underline decoration-[#D4AF37]/40 underline-offset-2">Founder&rsquo;s Kit</a></li>
+                            <li><a href="https://www.assemblyofbishops.org/covid19/everyone/homeschooling" target="_blank" class="hover:text-[#D4AF37] transition underline decoration-[#D4AF37]/40 underline-offset-2">Online homeschooling resources — Assembly of Bishops</a></li>
+                            <li><a href="https://www.saintemmelia.com/" target="_blank" class="hover:text-[#D4AF37] transition underline decoration-[#D4AF37]/40 underline-offset-2">Saint Emmelia Orthodox Homeschool Ministries</a></li>
+                        </ul>
                     </div>
                 </div>
 
@@ -290,7 +299,7 @@
                         <h4 class="text-2xl font-serif font-bold text-white mt-1">Parish School</h4>
                     </div>
                     <p class="text-gray-300 text-sm mb-8 leading-relaxed grow">
-                        <strong>The Model:</strong>  5-day schools and 3-day schools, often hosted by or connected to a parish) with a majority Orthodox student body and full administrative team | 10-100 families | Focus on professionalization, training, and annual fundraising.
+                        <strong>The Model:</strong>  5-day schools and 3-day schools (often hosted by or connected to a parish) with a majority Orthodox student body and full administrative team | 10-100 families | Focus on professionalization, training, and annual fundraising.
                     </p>
                     <div class="mt-auto pt-6 border-t border-gray-700">
                         <p class="text-xs font-bold text-[#D4AF37] uppercase mb-1">Our Recommendation</p>
@@ -305,7 +314,7 @@
                         <h4 class="text-2xl font-serif font-bold text-white mt-1">Community School</h4>
                     </div>
                     <p class="text-gray-300 text-sm mb-8 leading-relaxed grow">
-                        <strong>The Model:</strong> 5-day, full-service private schools in major metropolitan statistical areas. These schools have Orthodox leadership and many Orthodox families within a majority Non-Orthodox student body) serving the wider community with broad classical vision. | 50-250 families+ | Focus on institutional stability, generational success, and endowments. 
+                        <strong>The Model:</strong> 5-day, full-service private schools in major metropolitan statistical areas. These schools have Orthodox leadership and many Orthodox families (within a majority Non-Orthodox student body) serving the wider community with broad classical vision. | 50-250 families+ | Focus on institutional stability, generational success, and endowments. 
                     </p>
                     <div class="mt-auto pt-6 border-t border-gray-700">
                         <p class="text-xs font-bold text-[#D4AF37] uppercase mb-1">NOUS Recommendation</p>
@@ -331,7 +340,7 @@
 
             <div class="flex flex-col md:flex-row gap-6 mb-12 items-stretch">
                 
-                <a href="http://www.saintandrewacademy.com/" target="_blank" class="flex-1 bg-white p-6 border border-gray-100 shadow-sm hover:shadow-md transition group flex flex-col justify-center text-center md:text-left">
+                <a href="https://saintandrewacademy.com/" target="_blank" class="flex-1 bg-white p-6 border border-gray-100 shadow-sm hover:shadow-md transition group flex flex-col justify-center text-center md:text-left">
                     <span class="text-lg font-bold text-[#0A192F] block mb-1 group-hover:text-[#D4AF37] transition">Saint Andrew Academy</span>
                     <span class="text-xs font-bold uppercase tracking-widest text-gray-400 block">Riverside, CA</span>
                 </a>
@@ -360,7 +369,7 @@
                 <div class="bg-[#FAFAFA] p-6 border border-gray-100 rounded-sm inline-block">
                     <p class="text-gray-700 font-medium">
                         Are we missing your school? 
-                        <a href="mailto:dionysiusbuhler@gmail.com?subject=Add My School to NOUS" class="text-[#D4AF37] hover:text-[#0A192F] font-bold transition ml-2 border-b border-[#D4AF37] pb-0.5">
+                        <a href="/membership/" class="text-[#D4AF37] hover:text-[#0A192F] font-bold transition ml-2 border-b border-[#D4AF37] pb-0.5">
                             Contact us to join the directory.
                         </a>
                     </p>
@@ -373,15 +382,9 @@
                     <h4 class="text-2xl font-serif font-bold text-[#0A192F] mb-6 border-b-2 border-[#D4AF37]/30 pb-2 inline-block">California</h4>
                     <ul class="space-y-6">
                         <li>
-                            <a href="http://www.saintandrewacademy.com/" target="_blank" class="block group">
+                            <a href="https://saintandrewacademy.com/" target="_blank" class="block group">
                                 <span class="font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition text-lg block">Saint Andrew Academy</span>
                                 <span class="text-sm text-gray-500">Riverside, CA <span class="text-[#D4AF37] px-2">✦</span> <em class="text-gray-400">Parochial</em></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://smitheducationconsulting.com/directory-of-schools/" target="_blank" class="block group">
-                                <span class="font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition text-lg block">St. John of SF Academy</span>
-                                <span class="text-sm text-gray-500">San Francisco, CA <span class="text-[#D4AF37] px-2">✦</span> <em class="text-gray-400">Parochial</em></span>
                             </a>
                         </li>
                         <li>
@@ -396,6 +399,13 @@
                                 <span class="text-sm text-gray-500">Alhambra, CA <span class="text-[#D4AF37] px-2">✦</span> <em class="text-gray-400">Classical</em></span>
                             </a>
                         </li>
+                        <li>
+                            <!-- Address: 31612 El Camino Real, San Juan Capistrano, CA 92675 -->
+                            <a href="https://allsaintsacademyoc.org/" target="_blank" class="block group">
+                                <span class="font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition text-lg block">All Saints Orthodox Academy</span>
+                                <span class="text-sm text-gray-500">San Juan Capistrano, CA <span class="text-[#D4AF37] px-2">✦</span> <em class="text-gray-400">Classical</em></span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -404,7 +414,7 @@
                     <ul class="space-y-6">
                         <li>
                             <a href="https://chrysostomacademy.org/" target="_blank" class="block group">
-                                <span class="font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition text-lg block">St. John Chrysostom Academy</span>
+                                <span class="font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition text-lg block">Chrysostom Academy</span>
                                 <span class="text-sm text-gray-500">Bethlehem, PA <span class="text-[#D4AF37] px-2">✦</span> <em class="text-gray-400">Classical</em></span>
                             </a>
                         </li>
@@ -412,6 +422,12 @@
                             <a href="https://pittsburgh.saintconstantine.org/" target="_blank" class="block group">
                                 <span class="font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition text-lg block">The Saint Constantine School</span>
                                 <span class="text-sm text-gray-500">Pittsburgh, PA <span class="text-[#D4AF37] px-2">✦</span> <em class="text-gray-400">Classical</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.chrysostomschool.org/" target="_blank" class="block group">
+                                <span class="font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition text-lg block">St. John Chrysostom School</span>
+                                <span class="text-sm text-gray-500">York, PA <span class="text-[#D4AF37] px-2">✦</span> <em class="text-gray-400">Parochial, Classical</em></span>
                             </a>
                         </li>
                     </ul>
@@ -476,6 +492,13 @@
                                 <span class="text-sm text-gray-500">Coppell, TX (Dallas) <span class="text-[#D4AF37] px-2">✦</span> <em class="text-gray-400">Classical</em></span>
                             </a>
                         </li>
+                        <li>
+                            <!-- Address: 13555 Hillcrest Road, Dallas, TX 75240 -->
+                            <a href="https://htadallas.com/" target="_blank" class="block group">
+                                <span class="font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition text-lg block">Holy Trinity Academy</span>
+                                <span class="text-sm text-gray-500">Dallas, TX <span class="text-[#D4AF37] px-2">✦</span> <em class="text-gray-400">Parochial</em></span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -483,7 +506,7 @@
                     <h4 class="text-2xl font-serif font-bold text-[#0A192F] mb-6 border-b-2 border-[#D4AF37]/30 pb-2 inline-block">Oregon</h4>
                     <ul class="space-y-6">
                         <li>
-                            <a href="http://www.asapdx.org/" target="_blank" class="block group">
+                            <a href="https://www.asapdx.org/" target="_blank" class="block group">
                                 <span class="font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition text-lg block">Agia Sophia Academy</span>
                                 <span class="text-sm text-gray-500">Beaverton, OR <span class="text-[#D4AF37] px-2">✦</span> <em class="text-gray-400">Parochial</em></span>
                             </a>
@@ -562,6 +585,43 @@
                     </ul>
                 </div>
 
+                <div class="break-inside-avoid">
+                    <h4 class="text-2xl font-serif font-bold text-[#0A192F] mb-6 border-b-2 border-[#D4AF37]/30 pb-2 inline-block">Virginia</h4>
+                    <ul class="space-y-6">
+                        <li>
+                            <!-- Address: Manassas, Virginia 20110 -->
+                            <a href="https://www.stnicholasclassical.org/" target="_blank" class="block group">
+                                <span class="font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition text-lg block">St. Nicholas Academic Community</span>
+                                <span class="text-sm text-gray-500">Manassas, VA <span class="text-[#D4AF37] px-2">✦</span> <em class="text-gray-400">Classical</em></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="break-inside-avoid">
+                    <h4 class="text-2xl font-serif font-bold text-[#0A192F] mb-6 border-b-2 border-[#D4AF37]/30 pb-2 inline-block">Online Academies</h4>
+                    <ul class="space-y-6">
+                        <li>
+                            <a href="https://scholeacademy.com/st-raphael-school/" target="_blank" class="block group">
+                                <span class="font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition text-lg block">St. Raphael School (Scholé Academy)</span>
+                                <span class="text-sm text-gray-500">Online <span class="text-[#D4AF37] px-2">✦</span> <em class="text-gray-400">Classical</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://saaot.edu/" target="_blank" class="block group">
+                                <span class="font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition text-lg block">St. Athanasius Academy</span>
+                                <span class="text-sm text-gray-500">Online <span class="text-[#D4AF37] px-2">✦</span> <em class="text-gray-400">Homeschool</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.clrconline.com/" target="_blank" class="block group">
+                                <span class="font-bold text-[#0A192F] group-hover:text-[#D4AF37] transition text-lg block">CLRC</span>
+                                <span class="text-sm text-gray-500">Online <span class="text-[#D4AF37] px-2">✦</span> <em class="text-gray-400">Classes</em></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
 
 
@@ -632,12 +692,13 @@
                     <div class="text-[#0A192F] font-serif font-bold text-xl mb-4 h-12 flex items-center">Curriculum Library (beta)
                      </div>
                     <div class="w-12 h-1 bg-[#D4AF37] mb-4"></div>
-                    <p class="text-sm text-gray-600 italic mb-2"> <a href="https://www.livingclassical.org">Scriptorium Writing</a>, Classical Academic Press, <a href=https://circeinstitute.org/about-us/>CiRCE, CLRC, and more</a></p>
-                    <p class="text-sm text-gray-800">A substantial library of world-class classical curriculum for Orthodox Christians. 
-                        <li> <a href="https://classicalacademicpress.com/?srsltid=AfmBOooT2tnwus5r87twAAPtdwVyRnsRfFz9r2qhd0X-6nybojgAqI-k">CAP</a></li>
-                        <li> <a href="https://www.clrconline.com/about-the-clrc-great-books-program/">CLRC</a></li>
-                        
-                    </p>
+                    <p class="text-sm text-gray-600 italic mb-2"> <a href="https://www.livingclassical.org">Scriptorium Writing</a>, Classical Academic Press, <a href="https://circeinstitute.org/about-us/">CiRCE, CLRC, and more</a></p>
+                    <p class="text-sm text-gray-800 mb-2">A substantial library of world-class classical curriculum for Orthodox Christians.</p>
+                    <ul class="text-sm text-gray-800 space-y-1">
+                        <li><a href="https://classicalacademicpress.com/?srsltid=AfmBOooT2tnwus5r87twAAPtdwVyRnsRfFz9r2qhd0X-6nybojgAqI-k" class="hover:text-[#D4AF37] transition">CAP</a></li>
+                        <li><a href="https://www.clrconline.com/" class="hover:text-[#D4AF37] transition">CLRC</a></li>
+                        <li><a href="https://www.paideaclassics.org/#/" target="_blank" class="hover:text-[#D4AF37] transition">Paideia Classics</a></li>
+                    </ul>
                 </div>
                 <!-- OSI -->
                 <div class="bg-white p-8 rounded-sm shadow-sm border border-gray-100 flex flex-col items-center text-center">
@@ -679,19 +740,19 @@
                 </p>
             </div>
 
-<div class="grid md:grid-cols-2 gap-8 items-start">
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
                 
                 <div class="bg-[#112240] p-8 border-t-4 border-[#D4AF37] flex flex-col items-center text-center">
                     <img src="/assets/kb-reader-ordination-bw.jpg" alt="Reader Dionysius Buhler" class="w-24 h-24 rounded-full border-4 border-white shadow-md mb-6 object-cover">
                     <h4 class="text-xl font-serif font-bold mb-1">Reader Dionysius (Keith) Buhler, PhD </h4>
                     <p class="text-sm text-[#D4AF37] mb-4">Strategy, Start Up</p>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        As a founding headmaster and Director of Advancement, Dionysius specialises in moving schools from initial vision to sustainable reality. Drawing on extensive experience from academic philosophy to capital raising and entrepreneurial operations, he helps boards structure endowments, secure anchor funding, and implement the NOUS "School-in-a-Box" framework.
+                        As a founding headmaster and Director of Advancement, Dionysius specializes in moving schools from initial vision to sustainable reality. Drawing on extensive experience from academic philosophy to capital raising and entrepreneurial operations, he helps boards structure endowments, secure anchor funding, and implement the NOUS "School-in-a-Box" framework.
                     </p>
                 </div>
 
                 <div class="bg-[#112240] p-8 border-t-4 border-[#D4AF37] flex flex-col items-center text-center">
-                    <img src="https://images.squarespace-cdn.com/content/v1/59c314dbcd39c3022223ed20/22079643-7505-4ea4-a570-5294c242f510/IMG_20241221_211319.jpg?format=1000w" alt="Subdeacon Benjamin Lyda" class="w-24 h-24 rounded-full border-4 border-white shadow-md mb-6 object-cover">
+                    <img src="/assets/advisory-benjamin.jpg" alt="Subdeacon Benjamin Lyda" class="w-24 h-24 rounded-full border-4 border-white shadow-md mb-6 object-cover">
                     <a href="https://www.livingclassical.org" class="hover:opacity-80 transition">
                       <h4 class="text-xl font-serif font-bold mb-1">Subdeacon Callum (Benjamin) Lyda </h4>
                     </a>
@@ -702,6 +763,17 @@
                     </p>
                 </div>
 
+                <div class="bg-[#112240] p-8 border-t-4 border-[#D4AF37] flex flex-col items-center text-center">
+                    <img src="/assets/advisory-adrienne.jpg" alt="Adrienne Freas" class="w-24 h-24 rounded-full border-4 border-white shadow-md mb-6 object-cover grayscale">
+                    <a href="https://www.beautifulteaching.com/" class="hover:opacity-80 transition">
+                      <h4 class="text-xl font-serif font-bold mb-1">Adrienne Freas</h4>
+                    </a>
+
+                    <p class="text-sm text-[#D4AF37] mb-4">Curriculum & Professional Development</p>
+
+                    <p class="text-gray-400 text-sm leading-relaxed">Founder of Beautiful Teaching, LLC and host of The Classical Education Podcast, Adrienne serves as Instruction and Curriculum Coordinator for St. John Chrysostom School (York, PA) and St. Gregory Classical Academy (Akron, OH). Drawing on high-level advisory roles with Responsive Education Solutions and the University of Dallas — and her years as an Orthodox homeschool mother of four — she bridges traditional classical methods and the unique needs of Orthodox parish schools and homeschooling families.
+                    </p>
+                </div>
 
             </div>
         </div>
@@ -867,6 +939,7 @@
                     <li><a href="#vision" class="hover:text-white transition">The 2035 Mandate</a></li>
                     <li><a href="#scale" class="hover:text-white transition">Scale & Models</a></li>
                     <li><a href="#schools" class="hover:text-white transition">School Directory</a></li>
+                    <li><a href="https://buhler.notion.site/School-in-a-Box-f4868e0ee5b542c9b41b45ae803cea33" target="_blank" rel="noopener" class="hover:text-white transition">Founder&rsquo;s Kit</a></li>
                     <li><a href="#advisory" class="hover:text-white transition">Consulting</a></li>
                     <li><a href="/testimonials" class="hover:text-white transition">Testimonials</a></li>
                     <li><a href="/blog/" class="hover:text-white transition">Blog</a></li>
@@ -891,6 +964,16 @@
                 <div class="mt-8 pt-6 border-t border-gray-800">
                     <p class="text-xs font-serif italic text-gray-500">St. Nektarios, pray for us!</p>
                 </div>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto mb-10 border-l-4 border-[#D4AF37] pl-5 py-1">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div>
+                    <h3 class="font-serif text-lg text-white">Help shape Orthodox classical education</h3>
+                    <p class="text-sm text-gray-400 mt-1">Tell us about your school or family in a 3-minute survey.</p>
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfF7QNa5DoB_8oobLolJ0jOD6mRYmQVPMatoyBeiJkCTRy1hw/viewform" target="_blank" rel="noopener" class="inline-block self-start sm:self-auto shrink-0 bg-[#D4AF37] text-[#0A192F] px-5 py-2.5 text-xs font-bold uppercase tracking-widest hover:bg-white transition">Take the survey</a>
             </div>
         </div>
 
